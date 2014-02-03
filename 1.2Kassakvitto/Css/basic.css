@@ -1,0 +1,19 @@
+﻿/* Generell styling av sidan */
+body {
+    padding: 20px;
+}
+
+
+textbox {
+    padding-bottom: 10px;
+}
+
+.button {
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+}

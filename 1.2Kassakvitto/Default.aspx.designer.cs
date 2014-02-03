@@ -22,15 +22,6 @@ namespace _1._2Kassakvitto {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
         /// AmountBox control.
         /// </summary>
         /// <remarks>
@@ -40,22 +31,22 @@ namespace _1._2Kassakvitto {
         protected global::System.Web.UI.WebControls.TextBox AmountBox;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// AmountRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AmountRequired;
         
         /// <summary>
-        /// CompareValidator1 control.
+        /// AmountNotNegative control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        protected global::System.Web.UI.WebControls.CompareValidator AmountNotNegative;
         
         /// <summary>
         /// CalculateButton control.

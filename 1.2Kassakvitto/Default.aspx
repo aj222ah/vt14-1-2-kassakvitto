@@ -11,11 +11,11 @@
         <h1>Kassakvitto</h1>
         <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Totalbelopp"></asp:Label>
+            <p>Total köpsumma:</p>
             <asp:TextBox ID="AmountBox" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator"></asp:CompareValidator>
-            <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt" OnClick="CalculateButton_Click" />
+            <asp:RequiredFieldValidator ID="AmountRequired" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="AmountBox" Display="Dynamic" Text="Ange en totalsumma." CssClass="error"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="AmountNotNegative" runat="server" ErrorMessage="CompareValidator" ControlToValidate="AmountBox" Display="Dynamic" Text="Ange en totalsumma större än 0 kr." Operator="GreaterThan" Type="Double" ValueToCompare="0" CssClass="error"></asp:CompareValidator><br />
+            <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt" OnClick="CalculateButton_Click" CssClass="button" />
         </div>
         </form>
     </body>

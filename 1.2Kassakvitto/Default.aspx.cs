@@ -17,7 +17,9 @@ namespace _1._2Kassakvitto
 
         protected void CalculateButton_Click(object sender, EventArgs e)
         {
-
+            if (IsValid)
+            {
+            }
         }
     }
 }

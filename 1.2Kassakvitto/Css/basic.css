@@ -96,3 +96,19 @@ textbox {
     color: red;
 }
 
+#receipt {
+    background-color:lightgray;
+    border: 1px solid black;
+    width: 200px;
+    height: 350px;
+    margin-top: 15px;
+
+}
+
+#receipt h2, #receipt p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

@@ -7,5 +7,6 @@ namespace _1._2Kassakvitto.Functionality
 {
     public class Receipt
     {
+
     }
 }

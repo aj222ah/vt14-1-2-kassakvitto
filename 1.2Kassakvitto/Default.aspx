@@ -10,17 +10,17 @@
     <body>
         <h1>Kassakvitto</h1>
         <form id="form1" runat="server">
-        <div>
-            <p>Total köpsumma:</p>
-            <asp:TextBox ID="AmountBox" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="AmountRequired" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="AmountBox" Display="Dynamic" Text="Ange en totalsumma." CssClass="error"></asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="AmountNotNegative" runat="server" ErrorMessage="CompareValidator" ControlToValidate="AmountBox" Display="Dynamic" Text="Ange en totalsumma större än 0 kr." Operator="GreaterThan" Type="Double" ValueToCompare="0" CssClass="error"></asp:CompareValidator><br />
-            <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt" OnClick="CalculateButton_Click" CssClass="button" />
-        </div>
-        <div id="receipt" class="hidden">
-            <asp:Label ID="CompanyName" runat="server" Text="Möbelvaruhuset" CssClass="hidden"></asp:Label>
-            <asp:Label ID="PhoneNo" runat="server" Text="0123- 45 67 89" CssClass="hidden"></asp:Label>
-        </div>
+            <div>
+                <p>Total köpsumma:</p>
+                <asp:TextBox ID="AmountBox" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="AmountRequired" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="AmountBox" Display="Dynamic" Text="Ange en totalsumma." CssClass="error"></asp:RequiredFieldValidator>
+                <asp:CompareValidator ID="AmountNotNegative" runat="server" ErrorMessage="CompareValidator" ControlToValidate="AmountBox" Display="Dynamic" Text="Ange en totalsumma större än 0 kr." Operator="GreaterThan" Type="Double" ValueToCompare="0" CssClass="error"></asp:CompareValidator><br />
+                <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt" OnClick="CalculateButton_Click" CssClass="button" />
+            </div>
+            <asp:Panel ID="receiptArea" runat="server" Visible="False" CssClass="receiptArea">
+                <asp:Label ID="CompanyName" runat="server" Text="Möbelvaruhuset" Visible="False"></asp:Label>
+                <asp:Label ID="PhoneNo" runat="server" Text="0123- 45 67 89" Visible="False"></asp:Label>
+            </asp:Panel>
         </form>
     </body>
 </html>

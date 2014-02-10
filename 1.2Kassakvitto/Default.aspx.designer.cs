@@ -58,6 +58,15 @@ namespace _1._2Kassakvitto {
         protected global::System.Web.UI.WebControls.Button CalculateButton;
         
         /// <summary>
+        /// receiptArea control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel receiptArea;
+        
+        /// <summary>
         /// CompanyName control.
         /// </summary>
         /// <remarks>

@@ -58,10 +58,13 @@ body {
     margin-top: 20px;
 }
 
-h1, h2, p, .error {
-    font-family: Georgia;
+h1, p, .error, .receiptHeader {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+h1, p, .error {
+    font-family: Georgia;
 }
 
 h1 {
@@ -69,9 +72,11 @@ h1 {
     font-size: 14pt;
 }
 
-h2 {
+.receiptHeader {
     font-weight: bold;
     font-size: 12pt;
+    text-align: center;
+    font-family: 'Book Antiqua';
 }
 
 p, .error {
@@ -96,17 +101,21 @@ textbox {
     color: red;
 }
 
-#receipt {
+.receiptArea {
     background-color:lightgray;
     border: 1px solid black;
     width: 200px;
     height: 350px;
     margin-top: 15px;
-
 }
 
 #receipt h2, #receipt p {
     text-align: center;
+}
+
+.receiptHeader {
+    text-align: center;
+    font-size: 14pt;
 }
 
 .hidden {

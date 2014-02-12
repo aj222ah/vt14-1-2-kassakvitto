@@ -72,13 +72,6 @@ h1 {
     font-size: 14pt;
 }
 
-.receiptHeader {
-    font-weight: bold;
-    font-size: 12pt;
-    text-align: center;
-    font-family: 'Book Antiqua';
-}
-
 p, .error {
     font-size: 10pt;
 }
@@ -92,32 +85,62 @@ textbox {
     border-radius: 3px;
 }
 
-.result {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
 .error {
     color: red;
 }
 
-.receiptArea {
-    background-color:lightgray;
-    border: 1px solid black;
-    width: 200px;
-    height: 350px;
-    margin-top: 15px;
-}
-
-#receipt h2, #receipt p {
-    text-align: center;
-}
-
-.receiptHeader {
-    text-align: center;
-    font-size: 14pt;
-}
 
 .hidden {
     display: none;
+}
+
+/* Kvitto-presentation */
+#receiptArea {
+    background-color:lightgray;
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#receiptArea .presentation {
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding: 10px 5px 15px 5px;
+    text-align: left;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.receiptHeader {
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: Elephant;
+    display: block;
+}
+
+.infoText, .welcome {
+    display: block;
+    margin-top: -10px;
+}
+
+.welcome {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.labelDisplay {
+    padding-top: 5px;
+    display: inline-block;
+}
+
+.amountDisplay {
+    display: inline-block;
+    width: 100px;
+    float: right;
+    text-align: right;
+    padding-top: 5px;
 }

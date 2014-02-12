@@ -24,8 +24,12 @@ namespace _1._2Kassakvitto
                 Receipt r = new Receipt(amount);
                 r.Calculate(amount);
 
-                receiptArea.Visible = true;
-                CompanyName.Visible = true;
+                receiptArea.Attributes.Remove("class");
+
+                TotalSumAmount.Text = String.Format("{0:c}", r.Subtotal);
+                DiscountRateNo.Text = String.Format("{0:p}", r.DiscountRate);
+                DiscountAmount.Text = String.Format("{0:c}", r.MoneyOff);
+                FinalSumAmount.Text = String.Format("{0:c}", r.Total);
             }
         }
     }

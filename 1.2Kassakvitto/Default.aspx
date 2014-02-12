@@ -9,7 +9,8 @@
     </head>
     <body>
         <h1>Kassakvitto</h1>
-        <form id="CalculateDiscountForm" runat="server">
+        <%-- Formulär med default button --%>
+        <form id="CalculateDiscountForm" runat="server" defaultbutton="CalculateButton">
             <div>
                 <p>Total köpsumma:</p>
                 <%-- Input-box för summa med validering --%>
@@ -39,5 +40,6 @@
                 <asp:Label ID="WelcomeBack" runat="server" Text="Välkommen åter!" CssClass="welcome"></asp:Label><br />
             </div>
         </form>
+        <script src="Functionality/script.js"></script>
     </body>
 </html>

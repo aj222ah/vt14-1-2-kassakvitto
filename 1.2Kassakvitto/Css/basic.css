@@ -89,11 +89,6 @@ textbox {
     color: red;
 }
 
-
-.hidden {
-    display: none;
-}
-
 /* Kvitto-presentation */
 #receiptArea {
     background-color:lightgray;
@@ -143,4 +138,8 @@ textbox {
     float: right;
     text-align: right;
     padding-top: 5px;
+}
+
+.hidden {
+    display: none;
 }

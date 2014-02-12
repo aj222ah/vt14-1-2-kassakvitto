@@ -46,7 +46,7 @@ namespace _1._2Kassakvitto.Functionality
             }
             else if (Subtotal >= 500)
             {
-                DiscountRate = 0.5;
+                DiscountRate = 0.05;
             }
             else
             {

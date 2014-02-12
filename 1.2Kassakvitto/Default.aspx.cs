@@ -24,12 +24,15 @@ namespace _1._2Kassakvitto
                 Receipt r = new Receipt(amount);
                 r.Calculate(amount);
 
-                receiptArea.Attributes.Remove("class");
-
+                // Skriv ut belopp
                 TotalSumAmount.Text = String.Format("{0:c}", r.Subtotal);
                 DiscountRateNo.Text = String.Format("{0:p}", r.DiscountRate);
                 DiscountAmount.Text = String.Format("{0:c}", r.MoneyOff);
                 FinalSumAmount.Text = String.Format("{0:c}", r.Total);
+
+                // Visa kvitto
+                receiptArea.Attributes.Remove("class");
+
             }
         }
     }

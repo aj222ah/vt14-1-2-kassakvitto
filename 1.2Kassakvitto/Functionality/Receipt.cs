@@ -63,7 +63,7 @@ namespace _1._2Kassakvitto.Functionality
         // Tom konstruktor
         public Receipt(double subtotal)
         {
-
+            Calculate(subtotal);
         }
     }
 }

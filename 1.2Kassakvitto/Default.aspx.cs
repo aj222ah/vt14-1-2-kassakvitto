@@ -22,7 +22,6 @@ namespace _1._2Kassakvitto
                 var amount = Double.Parse(AmountBox.Text);
                 // Skapa nytt recept-objekt och starta beräkning
                 Receipt r = new Receipt(amount);
-                r.Calculate(amount);
 
                 // Skriv ut belopp
                 TotalSumAmount.Text = String.Format("{0:c}", r.Subtotal);
